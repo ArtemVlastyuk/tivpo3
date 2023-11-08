@@ -34,6 +34,7 @@ class Converter{
                 while ((line = reader.readLine()) != null) {
                     line1.append(line);
                 }
+                System.out.println(line1);
                 JSONParser jsonParser=new JSONParser();
                 JSONObject object=(JSONObject)jsonParser.parse(line1.toString());
                 JSONObject currenciesJSON = (JSONObject) object.get("currencies");
